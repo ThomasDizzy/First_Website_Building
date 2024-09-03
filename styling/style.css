@@ -2,4 +2,41 @@ body {
     background-color: yellowgreen;
     color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.main_header{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(241, 141, 8);
+    align-items: flex-end;
+    padding: 10px 20px;
+}
+.navigation{
+    display: flex;
+    flex-flow: row wrap;
+}
+.navigation a{
+    text-decoration: none;
+    color:brown;
+    padding: 15px;
+}
+.navigation a:hover{
+    color:aquamarine;
+    background-color:blue;
+}
+.banner{
+    background-image: url("../resources/banner_cosmos.jpg");
+    background-size: cover; 
+    background-position: center;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.banner h1{
+    color: rgb(59, 18, 156);
+    background-color:rgb(89, 89, 122);
+    padding: 10px;
 }
