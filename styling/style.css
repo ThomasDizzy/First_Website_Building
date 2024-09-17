@@ -1,5 +1,5 @@
 body {
-    background-color: yellowgreen;
+    background-color: rgb(204, 178, 144);;
     color: aquamarine;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -16,7 +16,7 @@ img {
     flex-wrap: wrap; */
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: rgb(241, 141, 8);
+    background-color: rgb(204, 178, 144);
     align-items: flex-end;
     padding: 10px 20px;
 }
@@ -38,11 +38,47 @@ img {
     background-size: cover; 
     background-position: center;
     min-height: 50vh;
-    display: grid;
-    place-items: center;
+    /* display: grid;
+    place-items: center;  */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px;
+
 }
 .banner h1{
-    color: rgb(59, 18, 156);
-    background-color:rgb(89, 89, 122);
+    color: rgb(32, 32, 30);
+    background-color:whitesmoke;
     padding: 10px;
+}
+.home_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 1third of the available width */
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 20px;
+    color: black;
+}
+.card_image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+.card {
+    border: 1px solid black;
+}
+.card_content {
+    display: flex;
+    flex-direction: column;
+}
+.card_button {
+    background-color: black;
+    color: white;
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 75%;
+    align-self: center;
 }
